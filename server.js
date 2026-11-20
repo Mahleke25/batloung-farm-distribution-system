@@ -23,7 +23,10 @@ const app = express();
 
 // General middleware
 const corsOptions = {
-    origin: 'http://localhost:5173',
+    origin: [
+        'http://localhost:5173',
+        'https://batloung-farm-distribution-system.vercel.app'
+    ],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type'],
     optionsSuccessStatus: 204
