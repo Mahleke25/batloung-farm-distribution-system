@@ -1,0 +1,247 @@
+.vendors-page {
+    width: 100%;
+}
+
+.vendors-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.vendors-header h1 {
+    margin: 0 0 7px;
+    font-size: 26px;
+    color: #f8fafc;
+}
+
+.vendors-header p,
+.vendor-table-heading p {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.vendor-primary-button {
+    background: #173b32;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.vendor-primary-button:hover {
+    background: #245b49;
+}
+
+.vendor-primary-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.vendor-summary {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.vendor-summary-card {
+    background: white;
+    padding: 20px;
+    border-radius: 7px;
+    border: 1px solid #e5e9e7;
+}
+
+.vendor-summary-card span {
+    display: block;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.vendor-summary-card strong {
+    font-size: 25px;
+    color: #173b32;
+}
+
+.vendor-table-section {
+    background: white;
+    padding: 22px;
+    border: 1px solid #e5e9e7;
+    border-radius: 7px;
+}
+
+.vendor-table-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.vendor-table-heading h2 {
+    margin: 0 0 7px;
+    font-size: 18px;
+    color: #172b3a;
+}
+
+.vendor-search {
+    width: 260px;
+    padding: 10px 12px;
+    border: 1px solid #d5dcd8;
+    border-radius: 5px;
+    outline: none;
+}
+
+.vendor-search:focus {
+    border-color: #245b49;
+}
+
+.vendor-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.vendor-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 850px;
+}
+
+.vendor-table th {
+    text-align: left;
+    background: #f4f6f5;
+    color: #53615b;
+    font-size: 13px;
+    padding: 13px;
+}
+
+.vendor-table td {
+    padding: 14px 13px;
+    border-bottom: 1px solid #edf0ee;
+    color: #46534d;
+    font-size: 14px;
+}
+
+.vendor-name {
+    font-weight: 600;
+    color: #172b3a !important;
+}
+
+.vendor-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.vendor-edit-button,
+.vendor-delete-button,
+.vendor-cancel-button {
+    padding: 7px 11px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.vendor-edit-button {
+    background: #e8eef5;
+    color: #315b83;
+}
+
+.vendor-delete-button {
+    background: #fbe9e7;
+    color: #b33b30;
+}
+
+.vendor-cancel-button {
+    background: #e9ecea;
+    color: #46534d;
+}
+
+.vendor-message {
+    padding: 25px 0;
+    text-align: center;
+    color: #777;
+}
+
+.vendor-success,
+.vendor-error {
+    padding: 12px 15px;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.vendor-success {
+    background: #e5f3e9;
+    color: #267342;
+}
+
+.vendor-error {
+    background: #fbe9e7;
+    color: #b33b30;
+}
+
+.vendor-form-group {
+    margin-bottom: 17px;
+}
+
+.vendor-form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #35433c;
+}
+
+.vendor-form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px;
+    border: 1px solid #d5dcd8;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+.vendor-form-group input:focus {
+    border-color: #245b49;
+}
+
+.vendor-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.vendor-form-actions button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+    .vendors-header,
+    .vendor-table-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .vendor-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .vendor-search {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .vendor-table-section {
+        padding: 15px;
+    }
+}

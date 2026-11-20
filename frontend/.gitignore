@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# React production build
+frontend/dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Vercel local configuration
+.vercel/

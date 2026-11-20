@@ -1,0 +1,287 @@
+.reports-page {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.reports-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.reports-intro h2 {
+    margin: 0 0 7px;
+    font-size: 22px;
+}
+
+.reports-intro p {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.report-refresh-button,
+.generate-report-button {
+    border: none;
+    border-radius: 6px;
+    padding: 11px 17px;
+    background: #172b4d;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.report-refresh-button:hover,
+.generate-report-button:hover {
+    background: #263f68;
+}
+
+.report-refresh-button:disabled,
+.generate-report-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.report-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.report-summary-card {
+    background: white;
+    border: 1px solid #e8eaf0;
+    border-radius: 9px;
+    padding: 20px;
+}
+
+.report-summary-card span {
+    color: #777;
+    font-size: 13px;
+}
+
+.report-summary-card h2 {
+    margin: 12px 0 7px;
+    color: #172b4d;
+    font-size: 23px;
+}
+
+.report-summary-card p {
+    margin: 0;
+    color: #888;
+    font-size: 12px;
+}
+
+.report-card {
+    background: white;
+    border: 1px solid #e8eaf0;
+    border-radius: 9px;
+    padding: 22px;
+}
+
+.report-card-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.report-card-heading h3 {
+    margin: 0 0 6px;
+    color: #172b4d;
+    font-size: 17px;
+}
+
+.report-card-heading p {
+    margin: 0;
+    color: #888;
+    font-size: 13px;
+}
+
+.report-table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.report-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+.report-table-container th {
+    padding: 13px 12px;
+    background: #f6f7fa;
+    color: #555;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.report-table-container td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #edf0f4;
+    color: #444;
+    font-size: 13px;
+}
+
+.report-table-container tbody tr:hover {
+    background: #fafbfc;
+}
+
+.report-empty {
+    text-align: center;
+    padding: 25px !important;
+    color: #888 !important;
+}
+
+.revenue-filter {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+}
+
+.report-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.report-form-group label {
+    color: #555;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.report-form-group input {
+    min-width: 180px;
+    padding: 11px;
+    border: 1px solid #dfe3ea;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.report-form-group input:focus {
+    outline: none;
+    border-color: #172b4d;
+}
+
+.generate-report-button {
+    height: 39px;
+}
+
+.revenue-total {
+    padding: 18px;
+    margin-bottom: 20px;
+    background: #f6f8fb;
+    border-radius: 7px;
+}
+
+.revenue-total span {
+    color: #777;
+    font-size: 13px;
+}
+
+.revenue-total h2 {
+    margin: 8px 0 0;
+    color: #172b4d;
+    font-size: 25px;
+}
+
+.report-payment-status {
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.report-payment-status.paid {
+    background: #e5f5ec;
+    color: #21834d;
+}
+
+.report-payment-status.partially_paid {
+    background: #fff2d9;
+    color: #a56b00;
+}
+
+.report-payment-status.unpaid {
+    background: #fde9e9;
+    color: #bd3434;
+}
+
+.outstanding-amount {
+    color: #bd3434 !important;
+    font-weight: 700;
+}
+
+.report-loading {
+    padding: 40px;
+    background: white;
+    border-radius: 8px;
+    text-align: center;
+    color: #777;
+}
+
+.report-error {
+    padding: 15px;
+    border-radius: 7px;
+    background: #fff0f0;
+    color: #b52c2c;
+    font-size: 13px;
+}
+
+.report-error p {
+    margin: 7px 0;
+}
+
+.report-error button {
+    padding: 8px 13px;
+    border: none;
+    border-radius: 5px;
+    background: #172b4d;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+
+    .report-summary-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .reports-intro {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .report-summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .report-card {
+        padding: 15px;
+    }
+
+    .revenue-filter {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .report-form-group input {
+        width: 100%;
+    }
+
+}

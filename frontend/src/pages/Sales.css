@@ -1,0 +1,466 @@
+.sales-page {
+    padding: 25px;
+    color: #263247;
+}
+
+.sales-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.sales-heading h1 {
+    margin: 0 0 7px;
+    font-size: 26px;
+}
+
+.sales-heading p,
+.sales-table-heading p {
+    margin: 0;
+    color: #788397;
+    font-size: 14px;
+}
+
+.sales-primary-button,
+.sales-secondary-button {
+    border: none;
+    border-radius: 6px;
+    padding: 11px 18px;
+    background: #172b4d;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.sales-primary-button:hover,
+.sales-secondary-button:hover {
+    background: #263f68;
+}
+
+.sales-primary-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.sales-summary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 25px;
+}
+
+.sales-summary-card {
+    background: white;
+    border: 1px solid #e6eaf0;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.sales-summary-card span {
+    display: block;
+    color: #788397;
+    font-size: 13px;
+}
+
+.sales-summary-card h2 {
+    margin: 12px 0 6px;
+    font-size: 23px;
+    color: #172b4d;
+}
+
+.sales-summary-card small {
+    color: #8993a3;
+}
+
+.sales-table-section {
+    background: white;
+    border: 1px solid #e6eaf0;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.sales-table-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.sales-table-heading h2 {
+    margin: 0 0 6px;
+    font-size: 19px;
+}
+
+.sales-table-heading input {
+    width: 300px;
+    padding: 11px 13px;
+    border: 1px solid #dce2ea;
+    border-radius: 6px;
+    outline: none;
+}
+
+.sales-table-heading input:focus,
+.sales-form-group input:focus,
+.sales-form-group select:focus {
+    border-color: #172b4d;
+}
+
+.sales-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.sales-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 950px;
+}
+
+.sales-table th {
+    text-align: left;
+    background: #f5f7fa;
+    color: #667085;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 13px;
+    white-space: nowrap;
+}
+
+.sales-table td {
+    padding: 14px 13px;
+    border-bottom: 1px solid #edf0f4;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.sales-table tbody tr:hover {
+    background: #fafbfd;
+}
+
+.sales-status {
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.sales-status.paid {
+    background: #e6f5ed;
+    color: #218653;
+}
+
+.sales-status.partially_paid {
+    background: #fff4dc;
+    color: #a66a00;
+}
+
+.sales-status.unpaid {
+    background: #fdeaea;
+    color: #c03939;
+}
+
+.sales-actions {
+    display: flex;
+    gap: 6px;
+}
+
+.sales-actions button {
+    border: none;
+    padding: 7px 9px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.sales-view-button {
+    background: #e8eef8;
+    color: #234575;
+}
+
+.sales-payment-button {
+    background: #e5f3eb;
+    color: #247749;
+}
+
+.sales-delete-button {
+    background: #fceaea;
+    color: #b93b3b;
+}
+
+.sales-empty {
+    text-align: center;
+    padding: 30px !important;
+    color: #8993a3;
+}
+
+.sales-alert {
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    font-size: 13px;
+}
+
+.sales-error {
+    background: #fdeaea;
+    color: #a92f2f;
+    border: 1px solid #f5cccc;
+}
+
+.sales-success {
+    background: #e7f5ec;
+    color: #237747;
+    border: 1px solid #ccebd8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sales-alert button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: inherit;
+}
+
+.sales-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.sales-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 15px;
+}
+
+.sales-form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #344054;
+}
+
+.sales-form-group input,
+.sales-form-group select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px;
+    border: 1px solid #dce2ea;
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
+    outline: none;
+    font-size: 13px;
+}
+
+.sales-form-group small {
+    color: #8993a3;
+    font-size: 11px;
+}
+
+.sales-items-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 22px 0 15px;
+}
+
+.sales-items-heading h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.sales-secondary-button {
+    padding: 8px 12px;
+    font-size: 12px;
+}
+
+.sales-item-row {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 0.7fr 0.9fr 0.9fr 30px;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    margin-bottom: 10px;
+    border: 1px solid #e8ecf1;
+    border-radius: 7px;
+    background: #fafbfd;
+}
+
+.sales-item-row .sales-form-group {
+    margin: 0;
+}
+
+.sales-item-price,
+.sales-item-subtotal {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.sales-item-price span,
+.sales-item-subtotal span {
+    color: #8993a3;
+    font-size: 11px;
+}
+
+.sales-item-price strong,
+.sales-item-subtotal strong {
+    font-size: 13px;
+    color: #172b4d;
+}
+
+.sales-item-price small {
+    font-size: 10px;
+    color: #8993a3;
+}
+
+.sales-remove-item {
+    border: none;
+    background: #fdeaea;
+    color: #b93b3b;
+    border-radius: 5px;
+    width: 28px;
+    height: 28px;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.sales-total-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px;
+    margin-top: 20px;
+    background: #f3f6fa;
+    border-radius: 7px;
+}
+
+.sales-total-box span {
+    font-size: 14px;
+    color: #667085;
+}
+
+.sales-total-box strong {
+    color: #172b4d;
+    font-size: 20px;
+}
+
+.sales-note {
+    color: #788397;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-top: 12px;
+}
+
+.sales-modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.sales-cancel-button {
+    border: 1px solid #dce2ea;
+    background: white;
+    color: #344054;
+    padding: 10px 17px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.sales-detail-information {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.sales-detail-information div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.sales-detail-information span {
+    color: #8993a3;
+    font-size: 12px;
+}
+
+.sales-detail-information strong {
+    font-size: 13px;
+    color: #263247;
+}
+
+.sales-detail-title {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.sales-detail-payment {
+    margin-top: 18px;
+    padding: 15px;
+    background: #f8f9fb;
+    border-radius: 7px;
+}
+
+.sales-detail-payment p,
+.sales-payment-information p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin: 8px 0;
+}
+
+.sales-payment-information {
+    background: #f5f7fa;
+    padding: 12px 15px;
+    border-radius: 7px;
+    margin-bottom: 18px;
+}
+
+.loading-message {
+    padding: 30px;
+    color: #788397;
+}
+
+@media (max-width: 1100px) {
+    .sales-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sales-item-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .sales-page {
+        padding: 15px;
+    }
+
+    .sales-heading,
+    .sales-table-heading {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .sales-table-heading input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .sales-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .sales-form-grid,
+    .sales-detail-information {
+        grid-template-columns: 1fr;
+    }
+}

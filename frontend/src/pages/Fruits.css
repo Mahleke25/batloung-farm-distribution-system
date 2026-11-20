@@ -1,0 +1,273 @@
+.fruits-page {
+    width: 100%;
+}
+
+.fruits-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+.fruits-header h1 {
+    margin: 0 0 7px;
+    font-size: 26px;
+    color: #e8ebed;
+}
+
+.fruits-header p,
+.fruit-table-heading p {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.fruit-primary-button {
+    background: #173b32;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.fruit-primary-button:hover {
+    background: #039a06;
+}
+
+.fruit-primary-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.fruit-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.fruit-summary-card {
+    background: white;
+    padding: 20px;
+    border-radius: 7px;
+    border: 1px solid #e5e9e7;
+}
+
+.fruit-summary-card span {
+    display: block;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.fruit-summary-card strong {
+    font-size: 25px;
+    color: #173b32;
+}
+
+.fruit-table-section {
+    background: white;
+    padding: 22px;
+    border: 1px solid #e5e9e7;
+    border-radius: 7px;
+}
+
+.fruit-table-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.fruit-table-heading h2 {
+    margin: 0 0 7px;
+    font-size: 18px;
+    color: #172b3a;
+}
+
+.fruit-search {
+    width: 230px;
+    padding: 10px 12px;
+    border: 1px solid #d5dcd8;
+    border-radius: 5px;
+    outline: none;
+}
+
+.fruit-search:focus {
+    border-color: #108f07;
+}
+
+.fruit-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.fruit-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+.fruit-table th {
+    text-align: left;
+    background: #f4f6f5;
+    color: #53615b;
+    font-size: 13px;
+    padding: 13px;
+}
+
+.fruit-table td {
+    padding: 14px 13px;
+    border-bottom: 1px solid #edf0ee;
+    color: #46534d;
+    font-size: 14px;
+}
+
+.fruit-name {
+    font-weight: 600;
+    color: #172b3a !important;
+}
+
+.fruit-status {
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.fruit-status.available {
+    background: #e5f3e9;
+    color: #149a0a;
+}
+
+.fruit-status.unavailable {
+    background: #fbe9e7;
+    color: #b33b30;
+}
+
+.fruit-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.fruit-edit-button,
+.fruit-delete-button,
+.fruit-cancel-button {
+    padding: 7px 11px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.fruit-edit-button {
+    background: #e8eef5;
+    color: #315b83;
+}
+
+.fruit-delete-button {
+    background: #fbe9e7;
+    color: #b33b30;
+}
+
+.fruit-cancel-button {
+    background: #e9ecea;
+    color: #46534d;
+}
+
+.fruit-message {
+    padding: 25px 0;
+    text-align: center;
+    color: #777;
+}
+
+.fruit-success,
+.fruit-error {
+    padding: 12px 15px;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.fruit-success {
+    background: #e5f3e9;
+    color: #267342;
+}
+
+.fruit-error {
+    background: #fbe9e7;
+    color: #b33b30;
+}
+
+.fruit-form-group {
+    margin-bottom: 17px;
+}
+
+.fruit-form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #06a70e;
+}
+
+.fruit-form-group input,
+.fruit-form-group textarea,
+.fruit-form-group select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px;
+    border: 1px solid #d5dcd8;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+.fruit-form-group input:focus,
+.fruit-form-group textarea:focus,
+.fruit-form-group select:focus {
+    border-color: #245b49;
+}
+
+.fruit-form-group textarea {
+    resize: vertical;
+}
+
+.fruit-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.fruit-form-actions button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+    .fruits-header,
+    .fruit-table-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .fruit-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .fruit-search {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .fruit-table-section {
+        padding: 15px;
+    }
+}
